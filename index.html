@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Tetris</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <script src='index.js' defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="main">
+      <canvas id="stage"></canvas>
+    </div>
+    <div class="sidebar">
+      <div class="nextPiece">
+        <canvas id="nextPieceStage"></canvas>
+      </div>
+      <div class="stats">
+        <p>Score:</p>
+        <p id="score">0</p>
+        <p>Level:</p>
+        <p id="level">1</p>
+      </div>
+      <div class="instructions">
+        <p>Instructions</p>
+        <br>
+        <ul>
+          <li>"A" to move Left</li>
+          <li>"D" to move Right</li>
+          <li>"S" to down</li>
+          <li>"E" to rotate Right</li>
+          <li>"Q" to rotate Left</li>
+          <li>"Space" to dropdown</li>
+        </ul>
+      </div>
+      <div class="buttons">
+        <button id="pauseBtn" class="pause" onclick="switchPause()">Pause</button>
+        <button class="new" onclick="newGame()">New Game</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
